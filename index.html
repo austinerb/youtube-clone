@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="nav-container">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars menu-btn"></i>
         <div id="logo"><a href="#"><i class="fab fa-youtube"></i> <span>YouTube</span></a></div>
         <div id="search">
           <input type="search" placeholder="Search"><button type="button" name="search"><i class="fas fa-search"></i></button>
@@ -23,22 +23,90 @@
       </div>
     </nav>
     <div class="side-nav">
-      <div class='side-nav-container'>
-        <ul>
-          <li><i class="fas fa-home"></i><br>Home</li>
-          <li><i class="fas fa-fire"></i><br>Trending</li>
-          <li><i class="fas fa-video"></i><br>Subscriptions</li>
-          <li><i class="fas fa-folder"></i><br>Library</li>
-        </ul>
-      </div>
+      <ul>
+        <li><i class="fas fa-home"></i><br>Home</li>
+        <li><i class="fas fa-fire"></i><br>Trending</li>
+        <li><i class="fas fa-video"></i><br>Subscriptions</li>
+        <li><i class="fas fa-folder"></i><br>Library</li>
+      </ul>
     </div>
+    <div class="menu">
+      <div class="menu-container">
+        <div class="menu-header menu-section">
+          <div class="menu-header-item"><i class="fas fa-bars menu-btn"></i><span id="menu-logo"><i class="fab fa-youtube"></i> <span>YouTube</span></span></div>
+        </div>
+        <div class="menu-items-container">
+          <div class="menu-main menu-section">
+            <div class="menu-item menu-item-selected"><i class="fas fa-home"></i><span class="label">Home</span></div>
+            <div class="menu-item"><i class="fas fa-fire"></i><span class="label">Trending</span></div>
+            <div class="menu-item"><i class="fas fa-video"></i><span class="label">Subscriptions</span></div>
+          </div>
+          <div class="menu-secondary menu-section">
+            <div class="menu-item"><i class="fas fa-folder"></i><span class="label">Library</span></div>
+            <div class="menu-item"><i class="fas fa-history"></i><span class="label">History</span></div>
+            <div class="menu-item"><i class="fas fa-clock"></i><span class="label">Watch later</span></div>
+            <div class="menu-item"><i class="fas fa-thumbs-up"></i><span class="label">Liked videos</span></div>
+          </div>
+          <div class="menu-subscriptions menu-section">
+            <h3>Subscriptions</h3>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Android</span></div>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Aubrey Marcus</span></div>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Billy Yang Films</span></div>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">BostonDynamics</span></div>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Bret Weinstein</span></div>
+            <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">CaseyNeistat</span></div>
+            <div class="menu-subscriptions-more">
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">ColdFusion</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">cyriak</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Fantasy</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Frugal Aesthetic</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">How to Architect</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Jamie Windsor</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Jocko Podcast</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Jordan B Peterson</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Kyle McDougall</span></div>
+              <div class="menu-item"><i class="fas fa-user-circle"></i><span class="label">Landyachtz</span></div>
+              <div class="menu-item"><i class="fas fa-plus"></i><span class="label">Browse channels</span></div>
+            </div>
+            <div class="menu-item subs-more-btn"><i class="fas fa-chevron-down"></i><span class="label">Show 10 more</span></div>
+          </div>
+          <div class="menu-more menu-section">
+            <h3>More From YouTube</h3>
+            <div class="menu-item"><i class="fab fa-youtube"></i><span class="label">Premium</span></div>
+            <div class="menu-item"><i class="fas fa-film"></i><span class="label">Movies & Shows</span></div>
+            <div class="menu-item"><i class="fas fa-gamepad"></i><span class="label">Gaming</span></div>
+            <div class="menu-item"><i class="fas fa-microphone"></i><span class="label">Live</span></div>
+          </div>
+          <div class="menu-settings menu-section">
+            <div class="menu-item"><i class="fas fa-cog"></i><span class="label">Settings</span></div>
+            <div class="menu-item"><i class="far fa-flag"></i><span class="label">Report history</span></div>
+            <div class="menu-item"><i class="fas fa-question-circle"></i><span class="label">Help</span></div>
+            <div class="menu-item"><i class="fas fa-exclamation-circle"></i><span class="label">Send feedback</span></div>
+          </div>
+          <div class="menu-footer menu-section">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Creators</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Developers</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy & Safety</a></li>
+              <li><a href="#">Test new features</a></li>
+            </ul>
+            <p>&copy; 2019 YouTube, LLC</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-dark"></div>
+    </div>
+
     <main>
-      <div class="ad">
-
-      </div>
-      <div class="">
-
-      </div>
     </main>
 
     <script type="text/javascript" src="script.js"></script>
