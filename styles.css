@@ -293,3 +293,272 @@ nav img {
   font-size: 12px;
   color: rgb(148, 148, 148);
 }
+
+/* main */
+
+main {
+  padding: 55px 0 20px 72px; /* to make up for navs */
+}
+
+/* ad */
+
+main .ad {
+  position: relative;
+  padding: 35px 20px 55px;
+  background-color: rgba(232, 136, 136, 0.3);
+}
+
+main .ad .ad-container {
+  width: 60%;
+}
+
+main .ad p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+main .ad p * {
+  vertical-align: middle;
+}
+
+main .ad p i {
+  color: red;
+  font-size: 28px;
+}
+
+main .ad h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+main .ad a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+main .ad .fa-window-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+  color: rgba(135, 135, 135, 0.5);
+  cursor: pointer;
+}
+
+/* content container  */
+
+main .content-container {
+  padding: 0 110px;
+}
+
+/* section */
+
+main .section {
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* section header  */
+
+main .section .section-header {
+  margin-bottom: 20px;
+}
+
+main .section .section-header h2 {
+  display: inline-block;
+  font-size: 16px;
+}
+
+main .section .section-header a {
+  float: right;
+  color: rgb(70, 113, 254);
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* video container */
+
+.video-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .section .video-container .video-row-1,
+main .section .video-container .video-row-2 {
+  display: none;
+}
+
+main .section .video-container .video-row-1.show,
+main .section .video-container .video-row-2.show {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* video controls */
+
+main .video-show-left,
+main .video-show-right {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  color: rgb(171, 171, 171);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 15px;
+  top: 40px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.video-show-right {
+  right: -20px;
+}
+
+.video-show-left {
+  left: -20px;
+}
+
+.video-show-right.show,
+.video-show-left.show {
+  display: block;
+}
+
+/* video */
+
+.video {
+  padding: 0 2px;
+  cursor: pointer;
+  width: 33%;
+  margin-bottom: 10px;
+}
+
+.video .thumbnail {
+  position: relative;
+}
+
+.video .thumbnail .time {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  padding: 1px 3px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+}
+
+.video .thumbnail img {
+  width: 100%;
+}
+
+.video .title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.video .author,
+.video .details {
+  color: #777777;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/* youtube tv */
+
+main .youtubetv .section-header {
+  position: relative;
+}
+
+main .youtubetv .section-header * {
+  vertical-align: middle;
+}
+
+main .youtubetv .section-header h2 {
+  font-size: 28px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main .youtubetv .section-header h2 i {
+  color: red;
+}
+
+main .youtubetv .section-header p {
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(99, 99, 99);
+}
+
+main .youtubetv .section-header > i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5px 20px;
+  color: rgb(150, 150, 150);
+  cursor: pointer;
+}
+
+/* youtube tv columns */
+
+.youtubetv .col-left {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+.youtubetv .col-left h3 {
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.youtubetv .col-left #price {
+  font-size: 12px;
+  display: inline;
+  color: green;
+  background-color: rgb(236, 236, 236);
+  font-weight: bold;
+  padding: 1px;
+}
+
+.youtubetv .col-left p {
+  margin: 10px 0;
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+}
+
+.youtubetv .col-left a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #065fd4;
+  padding: 10px 20px;
+  margin-top: 0;
+  display: inline-block;
+}
+
+.youtubetv .col-right {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+}
+
+.youtubetv .col-right img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.youtubetv .col-right p {
+  font-size: 13px;
+}
